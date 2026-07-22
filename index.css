@@ -35,6 +35,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
+    --ash: #0c0c0c;
     --pink: #ff3258;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
@@ -48,6 +49,7 @@
 
     --gutter-huge: 12rem;
     --gutter-medium: 6rem;
+    --gutter-medium-1: 4.5rem;
     --gutter-normal: 3rem;
     --gutter-small-1: 2.5rem;
     --gutter-small: 2rem;
@@ -541,14 +543,41 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Clients ----- */
 /* --------------------------------------- */
 
-.client__logos {
+.client__testimonials {
     display: flex;
     justify-content: space-between;
 }
 
+.client__testimonial {
+    padding: var(--gutter-medium-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50rem;
+    border-radius: 2.5%;
+    background-color: var(--ash);
+}
+
+.client__testimonial__text {
+    margin-bottom: 0px;
+    text-align: justify;
+}
+
+.client__testimonial__name {
+    margin-bottom: 0px;
+    font-size: var(--font-size-medium);
+    align-self: center;
+}
+
+.client__testimonial__occupation {
+    margin-bottom: 0px;
+}
+
 .client__logo {
-    height: 16rem;
-    max-width: 24rem;
+    align-self: center;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
 }
 
 @media(max-width: 1240px) {
